@@ -1,0 +1,143 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    }
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.container {
+    border-radius: 1rem;
+    padding-top: 7%;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    }
+
+.container__images {
+    width: 86%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.icon {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    }
+
+.cube {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    }
+
+.container__h1 {
+    color: hsl(0, 0%, 90%);
+    font-weight: 600;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin-left: 7%;
+    margin-top: 6%;
+    }
+
+.container__text {
+    color: hsl(215, 31%, 60%);
+    font-weight: 400;
+    font-size: 1em;
+    align-self: flex-start;
+    margin-left: 7%;
+    margin-top: 0;
+    margin-bottom: 0.50em;
+    }
+
+.container__data {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    width: 20em;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+    }
+
+.data--amount {
+    color: hsl(178, 100%, 50%);
+    font-size: 1em;
+    width: 10em;
+    }
+
+.data--days {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 1em;
+    }
+
+.container__creator {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    width: 86%;
+    justify-content: flex-start;
+    border-top: 0.10em solid hsl(215, 32%, 27%);
+    padding-top: 3%;
+    padding-bottom: 8%;
+    }
+
+.creator--img {
+  border: 0.1em solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 12%;
+  height: fit-content;
+  margin: 0;
+    }
+
+.creator--text {
+    color: hsl(215, 31%, 60%);
+    font-weight: 400;
+    font-size: 0.96em;
+    padding-left: 5%;
+    }
+
+.creator--name {
+    color: hsl(0, 00%, 75%);
+    font-weight: 600;
+    font-size: 0.96em;
+    }
+
+.creator--name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    }
+
+.container__h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    }
+
+.container__images:hover .cube {
+    opacity: 0.5;    
+    }
+
+.container__images:hover {
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    }
+
+.container__images:hover .icon {
+    cursor: pointer;
+    display: inline;
+    }
